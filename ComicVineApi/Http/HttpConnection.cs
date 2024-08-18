@@ -53,7 +53,7 @@ namespace ComicVineApi.Http
 
         public async Task<SearchResult> SearchAsync(Uri uri, Dictionary<string, object>? options)
         {
-            uri = GenerateUri(uri);
+            uri = GenerateUri(uri, options);
 
             var json = await httpClient.GetAsync(uri).ConfigureAwait(false);
 

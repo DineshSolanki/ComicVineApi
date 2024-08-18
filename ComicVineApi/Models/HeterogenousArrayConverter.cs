@@ -47,6 +47,8 @@ namespace ComicVineApi.Models
                     return new Publisher();
                 case "volume":
                     return new Volume();
+                case "issue":
+                    return new Issue();
             }
 
             if (serializer.MissingMemberHandling == MissingMemberHandling.Error)
